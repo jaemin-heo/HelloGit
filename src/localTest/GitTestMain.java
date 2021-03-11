@@ -7,14 +7,14 @@ public class GitTestMain {
 
 	public static void main(String[] args) {
 		// ** LocalDateTime
-		//	=> ë‚ ì§œì™€ ì‹œê°ì •ë³´ë¥¼ ëª¨ë‘ í‘œí˜„í•˜ê¸°ìœ„í•œ í´ëž˜ìŠ¤
-		// 	=> now() : í˜„ìž¬ ë‚ ì§œì™€ ì‹œê°
+		//	=> ³¯Â¥¿Í ½Ã°¢Á¤º¸¸¦ ¸ðµÎ Ç¥ÇöÇÏ±âÀ§ÇÑ Å¬·¡½º
+		// 	=> now() : ÇöÀç ³¯Â¥¿Í ½Ã°¢
 		LocalDateTime today = LocalDateTime.now();
 		System.out.println("** LocalDateTime today   => " + today);
-		// => LocalDateTime í´ëž˜ìŠ¤ì˜ toString() ë©”ì„œë“œì— ì¶œë ¥í¼ ì •ì˜
+		// => LocalDateTime Å¬·¡½ºÀÇ toString() ¸Þ¼­µå¿¡ Ãâ·ÂÆû Á¤ÀÇ
 		DateTimeFormatter df = DateTimeFormatter.ofPattern("yyyy-MM-dd, HH:mm:ss");
 		System.out.println("** LocalDateTime pattern => " + today.format(df));
-		System.out.println("** Local Commit Test ... ");
+		System.out.println("** Local Commit Test ... 2021/03/11 ");
 		System.out.println("** hotfix branch Commit Test ... ");
 	} // main
 } // class
